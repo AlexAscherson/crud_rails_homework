@@ -8,14 +8,14 @@
 
 
 
-    m1 = Mission.create( name: 'Apollo1', outcome:1, objective: 'unknown')
+    m1 = Mission.create( name: 'Apollo1', outcome:1, objective: 'unknown', mass: 5)
         
-    m2 = Mission.create( name: 'Apollo2', outcome:1, objective: 'unknown')
+    m2 = Mission.create( name: 'Apollo2', outcome:1, objective: 'unknown', mass: 5)
 
-    m3 = Mission.create( name: 'Apollo3', outcome:1, objective: 'unknown')
+    m3 = Mission.create( name: 'Apollo3', outcome:1, objective: 'unknown', mass: 5)
 
-    m4 = Mission.create( name: 'Apollo4', outcome:1, objective: 'unknown')
+    m4 = Mission.create( name: 'Apollo4', outcome:1, objective: 'unknown', mass: 5)
 
-    m4 = Mission.create( name: 'Apollo5', outcome:1, objective: 'unknown')
+    m4 = Mission.create( name: 'Apollo5', outcome:1, objective: 'unknown', mass: 5)
 
 
