@@ -1,13 +1,24 @@
 <h3> This is the Mission index page </h3>
 
+
+<% page = Wikipedia.find('Getting Things Done') %>
+<h1> <%= page.title %> </h1>
+
+
+
 <div class ='list-group'>
 
   <% @missions.each do | mission | %>
   <div class="list-group-item">
   <ul class = "mission">
+
   <li> <%= link_to(mission.name, mission_path(mission.id)) %> </li>
   <li> <%= link_to('Delete', mission_path(mission.id), method: :delete) %></li>
+
   <%= link_to('Edit', edit_mission_path(mission.id)) %>
+  <!-- command is edit, mission path is taken from mission.id
+  which we can call because we are in instance of an @mission
+  from the .each loop above -->
   </ul>
   </div>
   <% end %>
