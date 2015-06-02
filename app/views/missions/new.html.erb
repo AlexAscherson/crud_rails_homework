@@ -1,0 +1,17 @@
+<%= form_for @mission do |f| %>
+
+ <%= f.label :name %>
+ <%= f.text_field :name %>
+
+ <%= f.label :image %>
+ <%= f.text_field :image %>
+
+  <%= f.text_field :mission %>
+  <% f.label :mission %>
+
+  <%= f.text_field :objective %>
+  <% f.label :objective %>
+
+  <%= f.submit 'Create Mission' %>
+<% end %>
+

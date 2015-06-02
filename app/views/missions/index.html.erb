@@ -1,0 +1,15 @@
+<h3> This is the Mission index page </h3>
+
+<div class ='list-group'>
+
+  <% @missions.each do | mission | %>
+  <div class="list-group-item">
+  <ul class = "mission">
+  <li> <%= link_to(mission.name, mission_path(mission.id)) %> </li>
+  <li> <%= link_to('Delete', mission_path(mission.id), method: :delete) %></li>
+  <%= link_to('Edit', edit_mission_path(mission.id)) %>
+  </ul>
+  </div>
+  <% end %>
+  </div>
+
